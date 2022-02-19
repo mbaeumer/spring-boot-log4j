@@ -13,10 +13,6 @@ public class DemoController {
 
     @PostMapping("/post")
     public void someMagicEndpoint(@RequestBody final String name){
-        //String dummy = "${jndi:ldap://localhost:1389/Test}";
-        //log.info(dummy);
         log.info(name);
-       // log.info("${jndi:ldap://localhost:389/Test}");
-
     }
 }
